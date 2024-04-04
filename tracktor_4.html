@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scole=1.0">
+        <title>Document</title>
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header_main">
+            <div class="container">
+                <div class="header_inner">
+                    <div class="logo">
+    
+                        
+    <a href="#" class="logo"><img src="images/logo_img.jpg" alt="" class="logo_img"></a>                        </div>
+                 
+                    <nav class="menu">
+                        <ul class="menu_list">
+                            <li class="menu_list-item"><a href="Index.html" class="menu_list-link">
+                                Головна
+                            </a></li>
+                            <li class="menu_list-item"><a href="About_Us.html" class="menu_list-link">
+                                Про нас
+                            </a></li>
+                            <li class="menu_list-item"><a href="catalog.html" class="menu_list-link">
+                                Каталог
+                            </a></li>
+                            <li class="menu_list-item"><a href="galery.html" class="menu_list-link">
+                                Галерея
+                            </a></li>
+                            <li class="menu_list-item"><a href="contact_us.html" class="menu_list-link">
+                                Контакти
+                            </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            </header>
+    <main>
+        <section class="product">
+            <div class="product_image">
+                <div id="slider">
+                    <a href="#" class="control_next">></a>
+                    <a href="#" class="control_prev"><</a>
+                    <ul>
+                      <li><img class="product_img" src="images/tracktor_4_1.png" alt=""></li>
+                      <li><img class="product_img" src="images/tracktor_4_2.png"></li>
+                    </ul>  
+                  </div>
+                  
+                  
+                  
+                              </div>
+            <div class="product_information">
+                <h2>Трактор John Deere 5105 GF 2018 р. 105 к.с. 2771 м/г., №4050 L</h2>
+                <p class="product-description_1"></p>
+                <ul class="product-characteristics">
+                    <li>Характеристика 1: значення</li>
+                    <li>Характеристика 2: значення</li>
+                    <li>Характеристика 3: значення</li>
+                </ul>
+                <div class="product-price">
+            
+                    <span class="new-price">2 066 400 грн</span>
+                </div>
+                <button class="add_to_cart" id="add_to_cart">оформити лізинг</button>
+                <dialog class="dialog_window">
+                    <div id="form-main">
+                        <div id="form-div">
+                            <div class="closeModal" id="closeModal"></div>
+                          <form class="form" id="form1">
+                            
+                            <p class="name">
+                              <input required name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+                            </p>
+                            
+                            <p class="email">
+                              <input required name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                            </p>
+                            <p>
+                                <input required id="tel" class="validate[required,custom[email]] feedback-input" type="text" placeholder="Telephone">
+                            </p>
+                            <p class="text">
+                              <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                            </p>
+                             <a href="thanks.html"><input  class="submit_page" type="submit" value="SEND" />
+                             </a>
+                          </form>
+                        </div>
+                    </div>
+                   </dialog>
+            </div>
+        </section>
+        <section class="product-tabs">
+            <ul class="tabs">
+                <li class="tab active" data-tab="description">Опис</li>
+                <li class="tab" data-tab="characteristics">Характеристики</li>
+                <li class="tab" id="comments" data-tab="reviews">Відгуки</li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="description">
+                    <p>Дизельний трактор б/в John Deere 5105 GF, 2018 р/в, з напрацюванням 2771 м/год.</p>
+                </div>
+                <div class="tab-pane" id="characteristics">
+                    <table class="table_characteristics">
+                        <tr class="table_element">
+                            <th>Модель</th>
+                            <th>5105 GF</th>
+                        </tr>
+                        <tr class="table_element">
+                            <td>Рік випуску</td>
+                            <td>2018</td>
+                        </tr>
+                        <tr class="table_element">
+                            <td>Серійний номер</td>
+                            <td>1AT5105GLJF407813</td>
+                        </tr>
+                        <tr class="table_element">
+                            <td>Напрацювання (м/год.)</td>
+                            <td>2771</td>
+                        </tr class="table_element">
+                    </table>
+                </div>
+                <div class="tab-pane" id="reviews">
+                    <ul class="reviews">
+                        <li class="review">
+                            <p class="review-author">Ім'я автора</p>
+                            <p class="review-text">Відгук про товар...</p>
+                        </li>
+                        <li class="review">
+                            <p class="review-author">Інше ім'я</p>
+                            <p class="review-text">Ще один відгук...</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/page_slider.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/page_script.js"></script>
+    <script src="js/dialog.js"></script>
+</body>
+</html>
